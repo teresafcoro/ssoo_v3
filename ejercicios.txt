@@ -1,0 +1,7 @@
+Ejercicio3: 'programVerySimple' no se ejecuta dos veces porque la instrucción 'HALT' finaliza la ejecución del simulador.
+			Intercambio dicha instrucción por 'TRAP 3' en prog-V1-E3 para permitir que se ejecute el programa más de una vez.
+Ejercicio4: Al no disponer de suficiente capacidad en la tabla de procesos se produce un bucle infinito con el programa 'SystemIdleProcess'.
+Ejercicio6: Al superar la máxima capacidad posible por proceso se produce un bucle infinito con el programa 'SystemIdleProcess'.
+Ejercicio13: Es necesario salvar el valor de los registros PC, PSW y acumulador para poder continuar con la ejecución del proceso interrumpido más adelante.
+			 En OperatingSystem_SaveContext() y OperatingSystem_RestoreContext() añado código para almacenar y actualizar el valor del registro acumulador.
+Ejercicio16: Entra en un buble infinito. Se activa cuando se requiere manejar una interrupción.
